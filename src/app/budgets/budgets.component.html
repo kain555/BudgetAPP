@@ -1,0 +1,31 @@
+<div id='budgetMoreInfo'>
+  <p-dialog header="More info about: {{budName}}" [(visible)]="display" [modal]="true">
+    <p>
+    Month: {{budMonth}} <br>
+    Year: {{budYear}} <br>
+    Owner name: {{budOwner}} <br>
+    Sum of expences: {{expenceSum}} <br>
+    Budgeted: {{monthBudgeted || "No budgeted"}}
+    </p>  
+        <p-footer>
+            <button type="button" pButton icon="pi pi-check" (click)="display=false" label="Ok">Hide</button>
+        </p-footer>
+</p-dialog>
+</div>
+<main>
+  <h1> Budget's List</h1>
+  <button [routerLink]="['/addBudget']" id='CreateButton'>Create new budget</button>
+  <table style="width: 90%;">
+          <tbody>
+            <td>Name</td>
+            <td>Owner Name</td>
+            <td>Show more info</td>
+           <tr *ngFor="let budget of budgets">
+            <td>{{budget.name}}</td>
+            <td>{{budget.ownerName}}</td>
+            <td><button (click)="onClick(budget)">More info</button></td>
+           </tr>
+          </tbody>
+  </table>
+</main>
+

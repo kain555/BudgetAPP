@@ -1,0 +1,69 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 0 35px grey;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffffe1 70%, #afafaf 100%);
+}
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    background: url('budgetLOGO.png');
+    width: 170px;
+    height: 170px;
+    margin-left: 50px;
+}
+li {
+    margin: 10px 0px;
+    color: rgb(1, 11, 146);
+}
+h1 {
+    font-size: 45px;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 81, 255);
+    transform: translateX(-75%)
+}
+main {
+    font-size: 40px;
+    padding: 120px;
+    margin-bottom: 40px;
+    border-top: outset rgb(226, 225, 225);
+    text-align: center;
+}
+aside{
+    min-height: 100px;
+    float: left;
+    max-width: 20%;
+    min-width: 20%;
+    min-height: 500px;
+    padding-top: 50px;
+    border-top: outset rgb(226, 225, 225);
+    text-align: center;
+    font-size: 32px;
+    background: linear-gradient(to bottom, #8789ff49 100%, #ffffff 100%);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+ul {
+    list-style: none;
+    margin:0;
+    padding: 35px;
+}
+
+h2 {
+    color: rgb(4, 4, 128);
+    font-size: 70px;
+}
